@@ -1,0 +1,14 @@
+{
+  "name": "natour-website",
+  "version": "1.0.0",
+  "description": "natoure website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "isaachome",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
