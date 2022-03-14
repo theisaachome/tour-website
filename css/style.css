@@ -1,49 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-body{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: 16px;
-    line-height: 1.7;
-    color: #777;
-    padding: 30px;
-}
+html {
+  font-size: 62.5%; }
 
-.header{
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px; }
+
+.header {
   position: relative;
   height: 95vh;
-  background-image:  linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),url("../img/hero.jpg");
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
-  background-position: top;  
-  clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
-}
-.logo-box{
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+
+.logo-box {
   position: absolute;
   top: 40px;
-  left: 40px;
-}
-.logo{
-  height: 35px;
-}
-.text-box{
+  left: 40px; }
+
+.logo {
+  height: 35px; }
+
+.text-box {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
-.heading-primary{
+.heading-primary {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 60px;
-}
-.heading-primary-main{
+  margin-bottom: 60px; }
+
+.heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
@@ -55,86 +57,66 @@ body{
    animation-delay: 3s; 
    animation-iteration-count: 3;
    just for show we can delay
-   */
-}
-.heading-primary-sub{
+   */ }
+
+.heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
-  animation: moveInRight 1s ease-out;
-}
+  animation: moveInRight 1s ease-out; }
 
-
-@keyframes moveInLeft{
-  0%{
+@keyframes moveInLeft {
+  0% {
     opacity: 0;
-    transform: translateX(-100px);
-  }
-  80%{
-    transform: translateX(10px);
-  }
-  100%{
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
-
-@keyframes moveInRight{
-  0%{
+@keyframes moveInRight {
+  0% {
     opacity: 0;
-    transform: translateX(100px);
-  }
-  80%{
-    transform: translateX(-10px);
-  }
-  100%{
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
-
-@keyframes moveInButton{
-  0%{
+@keyframes moveInButton {
+  0% {
     opacity: 0;
-    transform: translateY(30px);
-  }
-  100%{
+    transform: translateY(30px); }
+  100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-
+    transform: translateX(0); } }
 
 .btn:link,
-.btn:visited{
+.btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
-  transition: all 0.2s ;
-  position: relative;
-}
+  transition: all 0.2s;
+  position: relative; }
 
-.btn:hover{
+.btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
-.btn:active{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-}
-.btn-white{
- background: #fff;
- color: #777;
-}
+.btn-white {
+  background: #fff;
+  color: #777; }
 
-.btn::after{
+.btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -144,17 +126,15 @@ body{
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
-}
-.btn-white::after{
-  background-color: #fff;
-}
+  transition: all 0.4s; }
 
-.btn:hover::after{
+.btn-white::after {
+  background-color: #fff; }
+
+.btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-.btn-animated{
+  opacity: 0; }
+
+.btn-animated {
   animation: moveInButton 0.5s ease-out 0.7s;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }
