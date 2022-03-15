@@ -59,10 +59,26 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.u-center-text {
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.text-center {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.margin-bottom-s {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-m {
+  margin-bottom: 4rem; }
+
+.margin-bottom-l {
   margin-bottom: 8rem; }
 
 @keyframes moveInLeft {
@@ -100,7 +116,8 @@ body {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.6rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -135,6 +152,25 @@ body {
   animation: moveInButton 0.5s ease-out 0.7s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #55c57a;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2deg); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -157,7 +193,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
