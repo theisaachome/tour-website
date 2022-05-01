@@ -1,14 +1,12 @@
-
-
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/function";
-
 
 @import "./base/base";
 @import "./base/typegraphy";
 @import "./base/utilities";
 @import "./base/animation";
+
 
 @import "./components/bg_video.scss";
 @import "./components/button";
@@ -16,9 +14,9 @@
 @import "./layout/grid";
 @import "components/composition";
 @import "components/feature-box";
+@import "components/form";
 @import "components/card";
 @import "components/story";
-
 
 @import "pages/home";
 
